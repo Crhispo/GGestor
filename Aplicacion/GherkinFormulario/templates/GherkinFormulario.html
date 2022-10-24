@@ -1,0 +1,22 @@
+<div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Formulario</h2>
+            <form id="FormRegistroCursos" action="RegistrarCurso/" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre"
+                        maxlength="30" minlength="3" autofocus required />
+                </div>
+                <div class="mb-3">
+                    <input type="number" id="numCredito" name="numCredito" class="form-control" min="1" max="10"
+                        step="1" value="1" required />
+                </div>
+                <div class="mb-3 d-grid">
+                    <button type="submit" class="btn btn-success text-white"><i
+                            class="fa-solid fa-floppy-disk"></i> - Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
